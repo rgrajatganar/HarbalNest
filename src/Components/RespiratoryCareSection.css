@@ -1,0 +1,10 @@
+/* src/Components/RespiratoryCareSection.css */
+
+section {
+  background-color: #f8f9fa;
+}
+
+h2 span {
+  border-bottom: 3px solid #5b8752;
+  color: #5b8752;
+}

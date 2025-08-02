@@ -1,0 +1,101 @@
+.treatment-container {
+  padding: 40px 60px;
+  background-color: #f2fdf4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.treatment-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.treatment-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+.treatment-right {
+  max-width: 400px;
+  font-size: 18px;
+  color: #222;
+}
+
+.treatment-right p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.all-services-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5b8752; /* Deep green */
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.all-services-btn:hover {
+  background-color: #2e7d32;
+  color: #ffe082;
+  transform: translateY(-2px);
+}
+
+.treatment-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.treatment-card {
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.treatment-card img {
+  width: 230px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treatment-card h3 {
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on image */
+.treatment-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.treatment-card:hover h3 {
+  color: #2E8B57; /* or #28a745 or your custom color */
+}
+
+
+
+.treatment-card p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.green-text {
+  color: #1a7f37;
+}

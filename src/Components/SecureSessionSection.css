@@ -1,0 +1,39 @@
+.secure-session {
+  background-color: #5b8752;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.secure-left h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.consult-btn1 {
+  background-color: #f6f8f6; /* Deep green */
+  color: #5b8752;
+  font-weight: 600;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.consult-btn1:hover {
+  background-color: #2e7d32;
+  color: #ffe082;
+  transform: translateY(-2px);
+}
+
+.secure-right img {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+}

@@ -1,0 +1,15 @@
+.consult-btn {
+  background-color: #5e8c61;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.consult-btn:hover {
+  background-color: #4d7b52;
+}

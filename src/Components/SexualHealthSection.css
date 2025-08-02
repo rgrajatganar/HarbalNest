@@ -1,0 +1,19 @@
+/* Optional custom styling */
+@media (max-width: 768px) {
+  .sexual-health-text {
+    text-align: center;
+  }
+}
+/* SexualHealthSection.css */
+.sexual-heading {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #5b8752; /* Bootstrap green */
+}
+
+.divider {
+  width: 100px;
+  height: 5px;
+  background-color: #5b8752;
+  border: none;
+}

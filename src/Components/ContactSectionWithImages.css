@@ -1,0 +1,100 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Top row with two side-by-side images */
+.top-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Bottom row with one image centered */
+.bottom-row img {
+  width: 460px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for top-row images */
+.top-row img {
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border: 1px solid #8fbc8f;
+  border-radius: 12px;
+  max-width: 360px;
+}
+
+.form-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-card p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: #5b8752;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e7d32;
+  color: #ffe082;
+}
