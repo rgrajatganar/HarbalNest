@@ -1,0 +1,29 @@
+.about-clinic-section {
+  background-color: #f6fbf4;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #5b8752;
+  font-weight: bold;
+  border-bottom: 3px solid #5b8752;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.clinic-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 30px;
+  color: #444;
+}
+
+.first-letter {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #5b8752;
+}
