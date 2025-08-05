@@ -5,7 +5,11 @@
   padding: 60px 20px;
   gap: 60px;
   flex-wrap: wrap;
+  background-image: none !important;
+  background-color: #fff; 
+  margin-top: 60px;
 }
+
 
 .image-stack {
   display: flex;

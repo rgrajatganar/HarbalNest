@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
   return (
@@ -11,22 +12,26 @@ function Header() {
         <nav className="nav justify-content-center flex-grow-1">
           <ul className="nav gap-4 mb-0">
             <li className="nav-item">
-              <Link className="nav-link nav-link-custom" to="/">Home</Link>
+              <NavLink className="nav-link nav-link-custom" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav-link-custom" to="/about-us">About Us</Link>
+              <NavLink className="nav-link nav-link-custom" to="/about-us">About Us</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav-link-custom" to="/services">Our Services</Link>
+              <NavLink className="nav-link nav-link-custom" to="/services">Our Services</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav-link-custom" to="/contact">Contact Us</Link>
+              <HashLink smooth to="/about-us#contact" className="nav-link nav-link-custom">
+                Contact Us
+              </HashLink>
             </li>
           </ul>
         </nav>
 
         <div className="text-end">
-          <button className="btn btn-appointment">Get Appointment</button>
+          <HashLink smooth to="/#appointment">
+            <button className="btn btn-appointment">Get Appointment</button>
+          </HashLink>
         </div>
       </div>
     </header>

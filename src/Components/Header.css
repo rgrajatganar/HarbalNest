@@ -1,6 +1,6 @@
 /* Header background - lighter attractive green */
 .header {
-  background-color: #fcfdfc; /* Medium green */
+  background-color: #fcfdfc; /* Subtle white-green */
   padding: 1rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -22,11 +22,13 @@
   transition: color 0.3s ease;
 }
 
-.nav-link-custom:hover {
-  color: #28752c; /* Light yellow on hover */
+/* Color on hover and active */
+.nav-link-custom:hover,
+.nav-link-custom.active {
+  color: #28752c;
 }
 
-/* Underline effect on hover and active */
+/* Underline animation on hover and active */
 .nav-link-custom::after {
   content: '';
   position: absolute;
@@ -38,19 +40,20 @@
   transition: width 0.3s ease;
 }
 
+/* Animate underline on hover and active */
 .nav-link-custom:hover::after,
-.nav-link-custom:active::after {
+.nav-link-custom.active::after {
   width: 100%;
 }
 
-.nav-link-custom:active {
+/* Optional: Slight boldness on active */
+.nav-link-custom.active {
   font-weight: 600;
-  color: #28752c;
 }
 
 /* Custom button styling for "Get Appointment" */
 .btn-appointment {
-  background-color: #5b8752; /* Deep green */
+  background-color: #5b8752;
   color: #fff;
   font-weight: 600;
   border: none;
@@ -61,8 +64,7 @@
 }
 
 .btn-appointment:hover {
-  background-color: #2e7d32; /* Lighter on hover */
+  background-color: #2e7d32;
   color: #ffe082;
   transform: translateY(-2px);
 }
-

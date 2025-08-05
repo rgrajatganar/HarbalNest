@@ -1,42 +1,48 @@
 .consultation-section {
   position: relative;
   width: 100%;
-  height: 500px;
   overflow: hidden;
-  border-radius: 20px;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  border-radius: 12px;
 }
 
 .consultation-img {
   width: 100%;
-  height: 100%;
+  height: auto; /* keeps image proportional */
+  max-height: 500px;
   object-fit: cover;
-  transform: scale(1.03); 
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
+/* Button positioned at bottom-right */
 .consultation-btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   right: 150px;
-  background-color: #5b8752;
-  color: #fff;
-  border: none;
+  background-color: #fff;
+  color: #333;
   padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #333;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .consultation-btn:hover {
-  background-color: #3e6d3a;
-  color: #ffe082;
+  background-color: #5b8752;
+  color: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .consultation-btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .consultation-img {
+    max-height: 350px;
+  }
 }

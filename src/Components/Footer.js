@@ -9,7 +9,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
 
-        {/* Shop Pages */}
         <div className="footer-section">
           <h3>Shop Pages</h3>
           <ul>
@@ -25,15 +24,18 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Service Pages</h3>
           <ul>
-            <li><NavLink to="/sexual-dysfunction" className={({ isActive }) => isActive ? 'footer-link active-link' : 'footer-link'}>Sexual Dysfunction</NavLink></li>
-            <li><NavLink to="/skin-diseases" className={({ isActive }) => isActive ? 'footer-link active-link' : 'footer-link'}>Skin Diseases</NavLink></li>
+            
+            <li><NavLink to="/skin-diseases" className={({ isActive }) => isActive ? 'footer-link active-link' : 'footer-link'}>
+  Skin Diseases
+</NavLink>
+</li>
             <li><NavLink to="/stomach-gastric" className={({ isActive }) => isActive ? 'footer-link active-link' : 'footer-link'}>Stomach-Gastric</NavLink></li>
             <li><NavLink to="/allergy" className={({ isActive }) => isActive ? 'footer-link active-link' : 'footer-link'}>Allergy</NavLink></li>
             <li><NavLink to="/infections" className={({ isActive }) => isActive ? 'footer-link active-link' : 'footer-link'}>Infections</NavLink></li>
           </ul>
         </div>
 
-        {/* Quick Links */}
+        
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>

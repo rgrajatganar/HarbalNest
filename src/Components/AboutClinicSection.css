@@ -1,29 +1,63 @@
-.about-clinic-section {
-  background-color: #f6fbf4;
+.about-clinic-container {
+  background-color: #f9f9f9;
   padding: 60px 20px;
-  color: #333;
+  position: relative;
+  overflow: hidden;
 }
 
-.section-title {
+.clinic-title {
   font-size: 2.5rem;
-  color: #5b8752;
   font-weight: bold;
-  border-bottom: 3px solid #5b8752;
-  display: inline-block;
-  padding-bottom: 10px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block; /* required for ::after */
 }
+
+.clinic-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #5e8c61;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
 
 .clinic-description {
-  font-size: 1.2rem;
-  max-width: 800px;
-  line-height: 1.8;
-  text-align: justify;
-  margin-top: 30px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  max-width: 900px;
   color: #444;
+  margin: 0 auto;
+  padding: 0 15px;
+  transition: all 0.3s ease;
 }
 
-.first-letter {
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #5b8752;
+strong {
+  color: #5e8c61;
+  font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .clinic-title {
+    font-size: 1.8rem;
+  }
+
+  .clinic-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+}
+
+.clinic-title-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+

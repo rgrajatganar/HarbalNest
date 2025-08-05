@@ -6,7 +6,7 @@ import img14 from '../assets/img14.jpg';
 
 const ContactSectionWithImages = () => {
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="appointment">
       <div className="image-stack">
         <div className="top-row">
           <img src={img12} alt="Remedy 1" />

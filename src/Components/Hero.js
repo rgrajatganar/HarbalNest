@@ -6,6 +6,8 @@ import img4 from '../assets/img4.jpg';
 import avtar1 from '../assets/avtar1.jpg';
 import avtar2 from '../assets/avtar2.jpg';
 import avtar3 from '../assets/avtar3.jpg';
+import { HashLink } from 'react-router-hash-link';
+
 
 function Hero() {
   return (
@@ -14,7 +16,10 @@ function Hero() {
         <div className="hero-text">
           <h1>Natural Solution for Great Health</h1>
           <p>Experience holistic wellness through trusted homeopathic solutions, tailored for your unique needs.</p>
-          <button className="consult-btn">Consult Now</button>
+          <HashLink smooth to="/#appointment">
+  <button className="consult-btn">Consult Now</button>
+</HashLink>
+          
           <div className="happy-patients">
             <img src={avtar1} alt="avatar1" />
             <img src={avtar2} alt="avatar2" />
