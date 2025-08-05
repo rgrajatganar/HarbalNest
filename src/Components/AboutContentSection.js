@@ -1,22 +1,22 @@
 import React from 'react';
+import './AboutContentSection.css';
 
 const AboutContentSection = () => {
   return (
-    <section className="container py-5">
-      <h2 className="text-success fw-bold mb-4">Who We Are</h2>
-      <p style={{ fontSize: '1.1rem', lineHeight: '1.7' }}>
-        HerbalNest is dedicated to promoting health through natural remedies and holistic treatments. We believe in the power of homeopathy and plant-based medicine to restore balance and vitality in everyday life.
-      </p>
-      <h3 className="mt-5 text-success">Our Mission</h3>
-      <p>
-        To empower people by providing natural, effective, and accessible healthcare solutions that heal from within and align with nature’s rhythm.
-      </p>
-      <h3 className="mt-4 text-success">Why Choose Us?</h3>
-      <ul className="mt-2">
-        <li>✓ Safe and effective homeopathy solutions</li>
-        <li>✓ Experienced and caring professionals</li>
-        <li>✓ Focus on long-term wellness</li>
-      </ul>
+    <section className="about-content-section py-5 px-4">
+      <div className="container">
+        <h2 className="text-success fw-bold mb-4">Our Journey</h2>
+        <p className="lead">
+          HerbalNest was founded with a vision to bring natural, homeopathic care to everyone.
+          With years of experience in holistic healing, our team focuses on treatments that not only
+          address symptoms but also rejuvenate the entire body and mind. Our mission is to empower
+          people with natural solutions rooted in ancient wisdom and backed by modern research.
+        </p>
+        <p>
+          Whether it's your skin, hair, digestion, or respiratory system – we offer a range of personalized treatments designed with care and compassion.
+          Join us in our journey towards natural wellness and discover how nature can be your best medicine.
+        </p>
+      </div>
     </section>
   );
 };

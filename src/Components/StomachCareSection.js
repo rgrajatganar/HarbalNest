@@ -6,7 +6,7 @@ export default function StomachCareSection() {
   return (
     <section className="container-fluid bg-light py-5">
       <div className="row align-items-center">
-        {/* Left Content */}
+       
         <div className="col-md-6 px-5">
           <h2 className="fw-bold display-5">
             <span

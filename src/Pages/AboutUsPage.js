@@ -1,20 +1,27 @@
 import React from 'react';
-import AboutHeroSection from '../Components/AboutHeroSection';
+import AboutHeroBanner from '../Components/AboutHeroBanner';
 import AboutClinicSection from '../Components/AboutClinicSection';
 import ConsultationSection from '../Components/ConsultationSection';
-import DoctorCard from '../Components/DoctorCard'; // ✅ Add this
+import DoctorSection from '../Components/DoctorSection';
+import StatsSection from '../Components/StatsSection';
+import SpecialtySection from '../Components/SpecialtySection'; 
+import TestimonialsSection from '../Components/TestimonialsSection';
+import ContactSection from '../Components/ContactSection';
 
 const AboutUsPage = () => {
   return (
     <>
-      <AboutHeroSection />
+      <AboutHeroBanner />
       <AboutClinicSection />
       <ConsultationSection />
-      <DoctorCard /> {/* ✅ Render here */}
+      <DoctorSection />
+      <StatsSection />
+      <SpecialtySection /> 
+      <TestimonialsSection />
+      <ContactSection id="contact" />
+      
     </>
   );
 };
 
 export default AboutUsPage;
-
-

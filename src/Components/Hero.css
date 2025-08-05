@@ -1,8 +1,9 @@
 .hero-section {
-  background-color: #e4efe4;
-  padding: 60px 0;
+  background: linear-gradient(135deg, #d7f0da, #f0f9f0);
+  padding: 50px 0; 
+  border-bottom: 2px solid #c0d9c0;
+  min-height: 500px; 
 }
-
 .hero-text {
   max-width: 600px;
 }
@@ -19,23 +20,20 @@
 }
 
 .consult-btn {
-  padding: 10px 18px;
+  padding: 10px 24px;
   border: 1px solid #5b8752;
   background-color: #5b8752;
-  color: #f5f7f5;
-  border-radius: 6px;
+  color: #fdf6f0;
+  border-radius: 999px; 
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .consult-btn:hover {
   background-color: #2f5527;
   color: #ffe082;
 }
-
-
 
 .happy-patients {
   margin-top: 20px;

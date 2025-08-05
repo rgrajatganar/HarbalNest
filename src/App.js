@@ -12,17 +12,18 @@ import SecureSessionSection from "./Components/SecureSessionSection";
 import ModernHomeopathySection from "./Components/ModernHomeopathySection";
 import TestimonialSection from './Components/TestimonialSection';
 import ContactSectionWithImages from './Components/ContactSectionWithImages';
-import SexualHealthSection from './Components/SexualHealthSection'; 
+import SexualHealthSection from './Components/SexualHealthSection';
 import SkinHairCareSection from './Components/SkinHairCareSection';
-import ConsultationPage from './Pages/ConsultationPage';
-
 
 // Pages
 import StomachCarePage from './Pages/StomachCarePage';
 import RespiratoryCarePage from './Pages/RespiratoryCarePage';
 import PainManagementPage from './Pages/PainManagementPage';
-import AboutUsPage from './Pages/AboutUsPage'; 
-
+import AboutUsPage from './Pages/AboutUsPage';
+import SkinDiseasesPage from './Pages/SkinDiseasesPage';
+import StomachGastricPage from './Pages/StomachGastricPage';
+import AllergyPage from './Pages/AllergyPage'; 
+import InfectionsPage from './Pages/InfectionsPage';
 
 export default function App() {
   return (
@@ -38,17 +39,22 @@ export default function App() {
               <SecureSessionSection />
               <ModernHomeopathySection />
               <TestimonialSection />
-              <ContactSectionWithImages />
               
+              <div id="appointment">
+                <ContactSectionWithImages />
+              </div>
             </>
           } />
-          <Route path="/about-us" element={<AboutUsPage />} /> {/* ✅ Add this route */}
           <Route path="/sexual-health" element={<SexualHealthSection />} />
           <Route path="/skin-hair-care" element={<SkinHairCareSection />} />
           <Route path="/stomach-care" element={<StomachCarePage />} />
           <Route path="/respiratory-care" element={<RespiratoryCarePage />} />
           <Route path="/pain-management" element={<PainManagementPage />} />
-          <Route path="/consultation" element={<ConsultationPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/skin-diseases" element={<SkinDiseasesPage />} />
+          <Route path="/stomach-gastric" element={<StomachGastricPage />} />
+          <Route path="/allergy" element={<AllergyPage />} />
+          <Route path="/infections" element={<InfectionsPage />} />
         </Routes>
         <Footer />
       </div>

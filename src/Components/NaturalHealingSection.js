@@ -1,6 +1,7 @@
 import React from 'react';
 import './NaturalHealingSection.css';
 import herbsImage from '../assets/img5.png'; // updated image import
+import { HashLink } from 'react-router-hash-link';
 
 const NaturalHealingSection = () => {
   return (
@@ -18,9 +19,10 @@ const NaturalHealingSection = () => {
           health concerns. We focus on restoring balance, strengthening immunity, and supporting your
           long-term well-being—all in a calm, patient-centered setting.
         </p>
-        <button className="about-btn">
-          About Clinic <span className="arrow">→</span>
-        </button>
+        <HashLink smooth to="/about-us#about-clinic" className="about-btn">
+  About Clinic <span className="arrow">→</span>
+</HashLink>
+
       </div>
     </section>
   );

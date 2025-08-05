@@ -1,13 +1,12 @@
-// src/Components/SkinHairCareSection.js
 import React from 'react';
-import './SkinHairCareSection.css'; // Optional for styling
-import img16 from '../assets/img16.jpg'; // Replace with your actual image
+import './SkinHairCareSection.css';
+import img16 from '../assets/img16.jpg'; 
 
 export default function SkinHairCareSection() {
   return (
     <section className="container-fluid bg-light py-5">
       <div className="row align-items-center">
-        {/* Left Content */}
+   
         <div className="col-md-6 px-5">
           <h2 className="fw-bold display-5">
             <span
@@ -27,7 +26,6 @@ export default function SkinHairCareSection() {
           </p>
         </div>
 
-        {/* Right Image */}
         <div className="col-md-6 text-center mt-4 mt-md-0">
 <img
   src={img16}

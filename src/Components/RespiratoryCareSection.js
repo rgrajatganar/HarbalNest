@@ -6,7 +6,7 @@ export default function RespiratoryCareSection() {
   return (
     <section className="container-fluid bg-light py-5">
       <div className="row align-items-center">
-        {/* Left Text Content */}
+        
         <div className="col-md-6 px-5">
           <h2 className="fw-bold display-5">
             <span
@@ -29,7 +29,6 @@ export default function RespiratoryCareSection() {
           
         </div>
 
-        {/* Right Image */}
         <div className="col-md-6 text-center mt-4 mt-md-0">
           <img
             src={img18}
