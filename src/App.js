@@ -10,7 +10,7 @@ import NaturalHealingSection from './Components/NaturalHealingSection';
 import TreatmentSection from './Components/TreatmentSection';
 import SecureSessionSection from "./Components/SecureSessionSection";
 import ModernHomeopathySection from "./Components/ModernHomeopathySection";
-import TestimonialSection from './Components/TestimonialSection';
+import TestimonialSection from './Components/Testimonials';
 import ContactSectionWithImages from './Components/ContactSectionWithImages';
 import SexualHealthSection from './Components/SexualHealthSection';
 import SkinHairCareSection from './Components/SkinHairCareSection';

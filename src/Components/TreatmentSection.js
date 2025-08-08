@@ -28,16 +28,26 @@ const TreatmentSection = () => {
 
       <div className="treatment-cards">
         <div className="treatment-card">
-          <img src={img6} alt="Bronchitis" />
-          <p>Bronchitis</p>
+          <div className="image-tooltip-wrapper">
+            <img src={img6} alt="Bronchitis" />
+            <p>Bronchitis</p>
+            <span className="tooltip-text">Inflammation of the bronchial tubes causing cough and mucus.</span>
+          </div>
+
         </div>
         <div className="treatment-card">
-          <img src={img7} alt="Back Pain" />
-          <p className="green-text">Back Pain</p>
+          <div className="image-tooltip-wrapper">
+            <img src={img7} alt="Back Pain" />
+            <p className="green-text">Back Pain</p>
+            <span className="tooltip-text">Common condition that affects the lower or upper back.</span>
+          </div>
         </div>
         <div className="treatment-card">
-          <img src={img8} alt="Constipation" />
-          <p>Constipation</p>
+          <div className="image-tooltip-wrapper">
+            <img src={img8} alt="Constipation" />
+            <p>Constipation</p>
+            <span className="tooltip-text">Difficulty in passing stool due to digestive issues.</span>
+          </div>
         </div>
       </div>
     </div>

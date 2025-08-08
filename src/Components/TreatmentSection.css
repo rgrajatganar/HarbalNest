@@ -39,7 +39,7 @@
   font-size: 16px;
   padding: 10px 24px;
   border: none;
-  border-radius: 6px;
+  border-radius: 999px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   cursor: pointer;
@@ -98,4 +98,33 @@
 
 .green-text {
   color: #1a7f37;
+}
+
+
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  background-color: #65af67;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 9px;
+  position: absolute;
+  bottom: 110%; /* show above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.image-tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

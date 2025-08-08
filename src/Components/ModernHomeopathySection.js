@@ -9,7 +9,7 @@ const ModernHomeopathySection = () => {
         <div className="col-md-6 text-md-start text-center">
           <h2 className="section-title">Modern Homeopathy<br />With a Personal Touch</h2>
         </div>
-        <div className="col-md-6 text-md-end text-center">
+        <div className="col-md-6  text-center">
           <p className="section-subtitle">Gentle, natural healing<br />designed around you</p>
         </div>
       </div>

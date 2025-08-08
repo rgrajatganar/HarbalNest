@@ -6,11 +6,13 @@
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .section-subtitle {
   font-size: 1.25rem;
   color: #444;
+  text-align: center;
 }
 
 .info-card {

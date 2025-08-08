@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './TestimonialSection.css';
+import React, { useEffect, useState, useRef } from 'react';
+import './Testimonials.css';
 import img11 from '../assets/img11.png';
 import img12 from '../assets/img2.jpg';
 import img13 from '../assets/img3.jpg';
@@ -27,23 +27,60 @@ const testimonials = [
 
 const TestimonialSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+  const intervalRef = useRef(null);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+    setFade(false);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+      setFade(true);
+    }, 300);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+    setFade(false);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+      setFade(true);
+    }, 300);
   };
+
+  const startAutoSlide = () => {
+    stopAutoSlide();
+    intervalRef.current = setInterval(() => {
+      handleNext();
+    }, 5000); // 5 seconds
+  };
+
+  const stopAutoSlide = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
+  useEffect(() => {
+    startAutoSlide();
+    return () => stopAutoSlide();
+  }, []);
+
+
+  // //Auto slide 5sec
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleNext();
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const current = testimonials[currentIndex];
 
   return (
     <section className="testimonial-section">
       <h2>What People Say About Us</h2>
-      <div className="testimonial-content">
+      <div className="testimonial-content" >
         <button className="arrow left" onClick={handlePrev}>←</button>
-        <div className="testimonial-box">
+        <div className={`testimonial-box ${fade ? "fade-in" : "fade-out"}`} onMouseEnter={stopAutoSlide} onMouseLeave={startAutoSlide}>
           <img src={current.image} alt="User" className="testimonial-image" />
           <p className="testimonial-quote">"{current.quote}"</p>
           <h4 className="testimonial-name">{current.name}</h4>
